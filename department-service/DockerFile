@@ -1,0 +1,4 @@
+FROM openjdk:11
+ADD target/department-service-0.0.1-SNAPSHOT.jar departmentservice.jar
+EXPOSE 9091
+ENTRYPOINT ["java","-jar","departmentservice.jar"]
